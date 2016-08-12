@@ -1,0 +1,23 @@
+{
+  "name": "systemjs-hot-reloader-setup",
+  "version": "1.0.0",
+  "devDependencies": {
+    "chokidar-socket-emitter": "^0.5.4",
+    "jspm": "^0.16.42"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.6.0"
+    }
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

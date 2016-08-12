@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+
+<script>
+if (System && location.origin.match(/localhost/)) {
+  System.trace = true
+
+  window.developement = System.import('systemjs-hot-reloader')
+  .then((HotReloader) => 
+    new HotReloader.default('http://localhost:8000'))
+}
+Promise.resolve(window.developement)
+  .then(() => System.import('client.js'))
+</script>
