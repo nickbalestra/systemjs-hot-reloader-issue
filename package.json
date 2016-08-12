@@ -7,7 +7,7 @@
   },
   "jspm": {
     "directories": {
-      "baseURL": "client"
+      "baseURL": "app/client"
     },
     "dependencies": {},
     "devDependencies": {
